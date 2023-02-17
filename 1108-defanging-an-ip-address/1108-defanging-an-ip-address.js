@@ -1,3 +1,7 @@
-class Solution:
-    def defangIPaddr(self, address: str) -> str:
-        return address.replace(".", "[.]")
+/**
+ * @param {string} address
+ * @return {string}
+ */
+var defangIPaddr = function(address) {
+   return address.replaceAll(".", "[.]"); 
+};
