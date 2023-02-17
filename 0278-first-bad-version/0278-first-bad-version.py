@@ -4,7 +4,7 @@
 class Solution:
     def firstBadVersion(self, n: int) -> int:
         
-        if n==1: return 1
+        if n==1: return 1;
         begin=1
         end=n
         while begin<end:
@@ -12,5 +12,3 @@ class Solution:
             if isBadVersion(mid): end=mid
             else: begin=mid+1
         return int(begin)
-
-        
